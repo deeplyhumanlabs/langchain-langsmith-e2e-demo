@@ -1,0 +1,13 @@
+LangChain is a framework for building applications powered by large language models.
+
+A LangChain application can be assembled from several reusable components. Document loaders bring external information into an application. Text splitters divide documents into smaller chunks so that they can be processed and retrieved efficiently.
+
+Embeddings convert text into numerical vectors. Texts with similar meaning tend to have vectors that are close to one another in the embedding space.
+
+A vector store keeps embeddings and makes similarity search possible. FAISS is a local vector similarity search library that can be used as a vector store in LangChain applications.
+
+A retriever is responsible for finding relevant documents or document chunks for a user question. The retrieved context can then be supplied to a language model.
+
+A chain connects multiple steps in an application into a reusable workflow. For example, a chain can retrieve relevant context, place that context into a prompt, and send the resulting prompt to a language model.
+
+LangSmith is a platform for tracing and observing LangChain applications. It can show information about runs such as inputs, outputs, latency, and token usage. LangSmith tracing can be enabled through environment variables without adding tracing logic to the application itself.
